@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.conf.urls import url,include
 from django.urls import path
 from . import views
+
 """urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',views.HomePage.as_view(),name='home'),
@@ -27,14 +28,28 @@ from . import views
     url(r'^posts/',include('posts.urls',namespace='posts')),
     url(r'^groups/',include('groups.urls',namespace='groups')),
 ]"""
+from django.contrib import admin
+from django.urls import path
+
+from simplesocial.views import home, get_response
+
+from django.conf.urls.static import static
+from django.conf import settings
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.HomePage.as_view(),name='home'),
+    path('home/', home,name='home'),
+    path('',views.HomePage.as_view(),name='index'),
+    path('get-response/', get_response),
     path('accounts/',include('accounts.urls',namespace='accounts')),
     path('accounts/',include('django.contrib.auth.urls')),
     path('test/',views.TestPage.as_view(),name='test'),
     path('thanks/',views.ThanksPage.as_view(),name='thanks'),
     path('posts/',include('posts.urls',namespace='posts')),
     path('groups/',include('groups.urls',namespace='groups')),
+
 ]
+
+if settings.DEBUG == True:
+	urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
