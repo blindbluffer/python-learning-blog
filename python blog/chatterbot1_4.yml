@@ -1,0 +1,1658 @@
+categories:
+- conversations
+conversations:
+﻿- - How To Use Python as a Calculator?
+  - The interpreter acts as a simple calculator you can type an expression at it and it will write the value. Expression syntax is straightforward the operators +, -, * and / work just like in most other languages (for example, Pascal or C); parentheses (()) can be used for grouping. For example
+
+- - How to calculate power of a number?
+  - With Python, it is possible to use the ** operator to calculate powers
+
+- - How do we assign a value to a variable?
+  - The equal sign (=) is used to assign a value to a variable.
+
+- - How to concatenat a string?
+  - Strings can be concatenated (glued together) with the + operator, and repeated with *:Two or more string literals (i.e. the ones enclosed between quotes) next to each other are automatically concatenated.
+
+- - How to add a string?
+  - Strings can be concatenated (glued together) with the + operator, and repeated with *:Two or more string literals (i.e. the ones enclosed between quotes) next to each other are automatically concatenated.
+
+- - What is the first index of a string?
+  - Indices may also be negative numbers, to start counting from the right
+
+- - How to slice a string?
+  - In addition to indexing, slicing is also supported. While indexing is used to obtain individual characters, slicing allows you to obtain substring:For non-negative indices, the length of a slice is the difference of the indices, if both are within bounds. For example, the length of word[1:3] is 2.
+
+- - Are strings immutable?
+  - Python strings cannot be changed they are immutable. Therefore, assigning to an indexed position in the string results in an error
+
+- - Are strings mutable?
+  - Python strings cannot be changed they are immutable. Therefore, assigning to an indexed position in the string results in an error
+
+- - What is a list?
+  - Python knows a number of compound data types, used to group together other values. The most versatile is the list, which can be written as a list of comma-separated values (items) between square brackets. Lists might contain items of different types, but usually the items all have the same type.
+
+- - How can you slice a list?
+  - Like strings (and all other built-in sequence type), lists can be indexed and sliced, All slice operations return a new list containing the requested elements. This means that the following slice returns a new (shallow) copy of the list
+
+- - Can you slice a list?
+  - Like strings (and all other built-in sequence type), lists can be indexed and sliced, All slice operations return a new list containing the requested elements. This means that the following slice returns a new (shallow) copy of the list
+
+- - How to concatenate a list?
+  - Lists also support operations like concatenation
+
+- - Are list mutable?
+  - Unlike strings, which are immutable, lists are a mutable type, i.e. it is possible to change their content
+
+- - Are list immutable?
+  - Unlike strings, which are immutable, lists are a mutable type, i.e. it is possible to change their content
+
+- - How to print a line in python?
+  - The print() function writes the value of the argument(s) it is given. It differs from just writing the expression you want to write (as we did earlier in the calculator examples) in the way it handles multiple arguments, floating point quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely.
+
+- - How to print in python?
+  - The print() function writes the value of the argument(s) it is given. It differs from just writing the expression you want to write (as we did earlier in the calculator examples) in the way it handles multiple arguments, floating point quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely.
+
+- - How to display output in python?
+  - The print() function writes the value of the argument(s) it is given. It differs from just writing the expression you want to write (as we did earlier in the calculator examples) in the way it handles multiple arguments, floating point quantities, and strings. Strings are printed without quotes, and a space is inserted between items, so you can format things nicely.
+
+- - how to use if?
+  - Perhaps the most well-known statement type is the if statement. There can be zero or more elif parts, and the else part is optional. The keyword eli is short for else if, and is useful to avoid excessive indentation. An if  elif  elif  sequence is a substitute for the switch or case statements found in other languages.
+
+- - How to use switch statement?
+  - There is no switch in python.
+
+- - how to use for statement?
+  - The for statement in Python differs a bit from what you may be used to in C or Pascal. Rather than always iterating over an arithmetic progression of numbers (like in Pascal), or giving the user the ability to define both the iteration step and halting condition (as C), Pythons for statement iterates over the items of any sequence (a list or a string), in the order that they appear in the sequence
+
+- - How to use the range()?
+  - If you do need to iterate over a sequence of numbers, the built-in function range() comes in handy.The given end point is never part of the generated sequence; range(10) generates 10 values, the legal indices for items of a sequence of length 10. It is possible to let the range start at another number, or to specify a different increment (even negative; sometimes this is called the step) It generates arithmetic progressions
+
+- - how to use len()?
+  - len() tells about the length of a string, list etc.
+
+- - What is break statement?
+  - The break statement, like in C, breaks out of the innermost enclosing for or while loop.
+
+- - What is the pass statement?
+  - The pass statement does nothing. It can be used when a statement is required syntactically but the program requires no action.
+
+- - what is PEP8?
+  - PEP 8 has emerged as the style guide that most projects adhere to; it promotes a very readable and eye-pleasing coding style. Every Python developer should read it at some point.
+
+- - What is append ?
+  - Add an item to the end of the list. Equivalent to a[len(a):] = [x]
+
+- - What is extend ?
+  - Extend the list by appending all the items from the iterable. Equivalent to a[len(a):] = iterable.
+
+- - What is insert ?
+  - Insert an item at a given position. The first argument is the index of the element before which to insert, so a.insert(0, x) inserts at the front of the list, and a.insert(len(a), x) is equivalent to a.append(x).
+
+- - What is remove ?
+  - Remove the first item from the list whose value is equal to x. It raises a ValueError if there is no such item.
+
+- - What is pop ?
+  - Remove the item at the given position in the list, and return it. If no index is specified, a.pop() removes and returns the last item in the list. (The square brackets around the i in the method signature denote that the parameter is optional, not that you should type square brackets at that position. You will see this notation frequently in the Python Library Reference.
+
+- - What is clear ?
+  - Remove all items from the list. Equivalent to del a[:].
+
+- - What is index ?
+  - Return zero-based index in the list of the first item whose value is equal to x. Raises a ValueError if there is no such item. The optional arguments start and end are interpreted as in the slice notation and are used to limit the search to a particular subsequence of the list. The returned index is computed relative to the beginning of the full sequence rather than the start argument.
+
+- - What is count ?
+  - Return the number of times x appears in the list.
+
+- - What is sort ?
+  - Sort the items of the list in place (the arguments can be used for sort customization, see sorted() for their explanation)
+
+- - What is reverse ?
+  - Reverse the elements of the list in place.
+
+- - What is copy ?
+  - Return a shallow copy of the list. Equivalent to a[:].
+
+- - What is del ?
+  - There is a way to remove an item from a list given its index instead of its value the del statement. This differs from the pop() method which returns a value. The del statement can also be used to remove slices from a list or clear the entire list (which we did earlier by assignment of an empty list to the slice)
+
+- - Are Tuples mutable ?
+  - Tuples are immutable, and usually contain a heterogeneous sequence of elements that are accessed via unpacking (see later in this section) or indexing
+
+- - Are Tuples immutable ?
+  - Tuples are immutable, and usually contain a heterogeneous sequence of elements that are accessed via unpacking (see later in this section) or indexing
+
+- - What is Dictionaries ?
+  - Dictionaries are builtin data types, sometimes found in other languages as associative memories or associative arrays, Dictionaries are indexed by keys, which can be any immutable type.
+
+- - what is a Module ?
+  - A module can contain executable statements as well as function definitions.
+
+- - what is dir function?
+  - The built-in function dir() is used to find out which names a module defines.
+
+- - what are packages?
+  - Packages are a way of structuring Python’s module namespace by using “dotted module names”.
+
+- - what is  formatted string literals?
+  - To use formatted string literals,(also called f-strings for short) begin a string with f or F before the opening quotation mark or triple quotation mark. Inside this string, you can write a Python expression between { and } characters that can refer to variables or literal values.
+
+- - what is f-string?
+  - To use formatted string literals,(also called f-strings for short) begin a string with f or F before the opening quotation mark or triple quotation mark. Inside this string, you can write a Python expression between { and } characters that can refer to variables or literal values.
+
+- - what is str.format?
+  - The str.format() method of strings requires more manual effort. You’ll still use { and } to mark where a variable will be substituted and can provide detailed formatting directives, but you’ll also need to provide the information to be formatted.
+
+- - what was Old string formatting ?
+  - The % operator can also be used for string formatting. It interprets the left argument much like a sprintf()-style format string to be applied to the right argument, and returns the string resulting from this formatting operation.
+
+- - how to open a file ?
+  - open() returns a file object, and is most commonly used with two arguments open(filename, mode).
+
+- - how to open a file in read mode ?
+  - open() returns a file object, and is most commonly used with two arguments open(filename, r).
+
+- - how to open a file in write mode ?
+  - open() returns a file object, and is most commonly used with two arguments open(filename, w).
+
+- - how to open a file in append mode ?
+  - open() returns a file object, and is most commonly used with two arguments open(filename, a).
+
+- - how to read fixed size of a file ?
+  - To read a file’s contents, call f.read(size), which reads some quantity of data and returns it as a string (in text mode) or bytes object (in binary mode). size is an optional numeric argument.
+
+- - how to read a single line?
+  - f.readline() reads a single line from the file; a newline character (\n) is left at the end of the string, and is only omitted on the last line of the file if the file doesn’t end in a newline.
+
+- - how to read all the lines?
+  - If you want to read all the lines of a file in a list you can also use list(f) or f.readlines().
+
+- - how to writw a line?
+  - f.write(string) writes the contents of string to the file, returning the number of characters written.
+
+- - what does f.write return?
+  -  returns the number of characters written.
+
+- - what is f.tell?
+  - f.tell() returns an integer giving the file object’s current position in the file represented as number of bytes from the beginning of the file when in binary mode and an opaque number when in text mode.
+
+- - what is f.seek?
+  - To change the file object’s position, use f.seek(offset, from_what). The position is computed from adding offset to a reference point; the reference point is selected by the from_what argument.
+
+- - what is syntax error?
+  - Syntax errors, also known as parsing errors, are perhaps the most common kind of complaint you get while you are still learning Python
+
+- - what is exception?
+  - Errors detected during execution are called exceptions and are not unconditionally fatal you will soon learn how to handle them in Python programs.
+
+- - what is try?
+  - Try statement is used to handle exception.A try statement may have more than one except clause, to specify handlers for different exceptions.
+
+- - what is Raise?
+  - The raise statement allows the programmer to force a specified exception to occur.
+
+- - what are User-defined Exceptions?
+  - Programs may name their own exceptions by creating a new exception class (see Classes for more about Python classes). Exceptions should typically be derived from the Exception class, either directly or indirectly.
+
+- - what is a class?
+  - Classes provide a means of bundling data and functionality together. Creating a new class creates a new type of object, allowing new instances of that type to be made.
+
+- - define a class?
+  - Classes provide a means of bundling data and functionality together. Creating a new class creates a new type of object, allowing new instances of that type to be made.
+
+- - what is namespace?
+  - A namespace is a mapping from names to objects. Most namespaces are currently implemented as Python dictionaries, but that’s normally not noticeable in any way (except for performance), and it may change in the future.
+
+- - what type of operations objects support?
+  - Class objects support two kinds of operations attribute references and instantiation.
+
+- - what is Attribute references?
+  - Attribute references use the standard syntax used for all attribute references in Python obj.name. Valid attribute names are all the names that were in the class’s namespace when the class object was created.
+
+- - what is instantiation?
+  - The instantiation operation (“calling” a class object) creates an empty object. Many classes like to create objects with instances customized to a specific initial state.
+
+- - what is __init__?
+  - When a class defines an __init__() method, class instantiation automatically invokes __init__() for the newly-created class instance.
+
+- - what is init ?
+  - When a class defines an __init__() method, class instantiation automatically invokes __init__() for the newly-created class instance.
+
+- - what is init(self)?
+  - When a class defines an __init__() method, class instantiation automatically invokes __init__() for the newly-created class instance.
+
+- - what is __init__(self)?
+  - When a class defines an __init__() method, class instantiation automatically invokes __init__() for the newly-created class instance.
+
+- - what is inheritance?
+  - In inheritance, a class (usually called superclass) is inherited by another class (usually called subclass). The subclass adds some attributes to superclass.
+
+- - what is issubclass?
+  - Python provides a function issubclass() that directly tells us if a class is subclass of another class.
+
+- - Does Python support Multiple Inheritance?
+  - Unlike Java and like C++, Python supports multiple inheritance.
+
+- - what is super?
+  - Super can be called upon in a single inheritance, in order to refer to the parent class or multiple classes without explicitly naming them.
+
+- - what is Private Variables?
+  - Private instance variables that cannot be accessed except from inside an object don’t exist in Python. However, there is a convention that is followed by most Python code a name prefixed with an underscore (e.g. _spam) should be treated as a non-public part of the API (whether it is a function, a method or a data member)
+
+- - what is Generators?
+  - Generators are a simple and powerful tool for creating iterators. They are written like regular functions but use the yield statement whenever they want to return data.
+
+- - what is Generator Expressions?
+  - Some simple generators can be coded succinctly as expressions using a syntax similar to list comprehensions but with parentheses instead of square brackets. These expressions are designed for situations where the generator is used right away by an enclosing function.
+
+- - what is  Batteries Included?
+  - Python has a “batteries included” philosophy. This is best seen through the sophisticated and robust capabilities of its larger packages.
+
+- - what is  doctest?
+  - The doctest module provides a tool for scanning a module and validating tests embedded in a program’s docstrings. Test construction is as simple as cutting-and-pasting a typical call along with its results into the docstring.
+
+- - what are Data Compression format supported by python?
+  - Common data archiving and compression formats are directly supported by modules including zlib, gzip, bz2, lzma, zipfile and tarfile.
+
+- - what is math?
+  -  In python the math module gives access to the underlying C library functions for floating point math. for you, Maths can also be a nigntmare ;)
+
+- - what is re?
+  - The re module provides regular expression tools for advanced string processing. For complex matching and manipulation, regular expressions offer succinct, optimized solutions.
+
+- - what is re package?
+  - The re module provides regular expression tools for advanced string processing. For complex matching and manipulation, regular expressions offer succinct, optimized solutions.
+
+- - what is sys?
+  - The sys module also has attributes for stdin, stdout, and stderr. The latter is useful for emitting warnings and error messages to make them visible even when stdout has been redirected
+
+- - what is glob?
+  - The glob module provides a function for making file lists from directory wildcard searches
+
+- - what is random?
+  - The random module provides tools for making random selections
+
+- - how to access date ?
+  - The datetime module supplies classes for manipulating dates and times in both simple and complex ways. While date and time arithmetic is supported, the focus of the implementation is on efficient member extraction for output formatting and manipulation. The module also supports objects that are timezone aware.
+
+- - how to access time?
+  - The datetime module supplies classes for manipulating dates and times in both simple and complex ways. While date and time arithmetic is supported, the focus of the implementation is on efficient member extraction for output formatting and manipulation. The module also supports objects that are timezone aware.
+
+- - how to access date and time
+  - The datetime module supplies classes for manipulating dates and times in both simple and complex ways. While date and time arithmetic is supported, the focus of the implementation is on efficient member extraction for output formatting and manipulation. The module also supports objects that are timezone aware.
+
+- - how to generate random numbers?
+  - The random module provides tools for making random selections
+
+- - how to calculate mean?
+  - The statistics module calculates basic statistical properties (the mean, median, variance, etc.) of numeric data
+
+- - how to calculate median?
+  - The statistics module calculates basic statistical properties (the mean, median, variance, etc.) of numeric data
+
+- - how to calculate varience
+  - The statistics module calculates basic statistical properties (the mean, median, variance, etc.) of numeric data
+
+- - How to use maths functions?
+  - The math module gives access to the underlying C library functions for floating point math
+
+- - how to use functions of mathematics?
+  - The math module gives access to the underlying C library functions for floating point math
+
+- - how to match String Pattern?
+  - The re module provides regular expression tools for advanced string processing. For complex matching and manipulation, regular expressions offer succinct, optimized solutions
+
+- - what is Decimal ?
+  - The decimal module offers a Decimal datatype for decimal floating point arithmetic.The Decimal result keeps a trailing zero, automatically inferring four place significance from multiplicands with two place significance.
+
+- - what is heap
+  - The heapq module provides functions for implementing heaps based on regular lists. The lowest valued entry is always kept at position zero.
+
+- - what is  bisect?
+  - In addition to alternative list implementations, the library also offers other tools such as the bisect module with functions for manipulating sorted lists.
+
+- - what is deque?
+  - The collections module provides a deque() object that is like a list with faster appends and pops from the left side but slower lookups in the middle.
+
+- - what is an array?
+  - The array module provides an array() object that is like a list that stores only homogeneous data and stores it more compactly.
+
+- - what is logging?
+  - The logging module offers a full featured and flexible logging system.
+
+- - what is multi-threading?
+  - Threading is a technique for decoupling tasks which are not sequentially dependent
+
+- - what is struct?
+  - The struct module provides pack() and unpack() functions for working with variable length binary record formats.
+
+- - what is pack?
+  - The struct module provides pack() and unpack() functions for working with variable length binary record formats.
+
+- - what is unpack?
+  - The struct module provides pack() and unpack() functions for working with variable length binary record formats.
+
+- - how to deque?
+  - The collections module provides a deque() object that is like a list with faster appends and pops from the left side but slower lookups in the middle.
+
+- - how to use an array?
+  - The array module provides an array() object that is like a list that stores only homogeneous data and stores it more compactly.
+
+- - how to create an array?
+  - The array module provides an array() object that is like a list that stores only homogeneous data and stores it more compactly.
+
+- - how garbage collection is done?
+  - Python does automatic memory management (reference counting for most objects and garbage collection to eliminate cycles). The memory is freed shortly after the last reference to it has been eliminated.
+
+- - how memory is managed?
+  - Python does automatic memory management (reference counting for most objects and garbage collection to eliminate cycles). The memory is freed shortly after the last reference to it has been eliminated.
+
+- - what is substitute?
+  - The substitute() method raises a KeyError when a placeholder is not supplied in a dictionary or a keyword argument.
+
+- - what is Template?
+  - The string module includes a versatile Template class with a simplified syntax suitable for editing by end-users. This allows users to customize their applications without having to alter the application.
+
+- - what is locate?
+  - The locale module accesses a database of culture specific data formats. The grouping attribute of locale’s format function provides a direct way of formatting numbers with group separators
+
+- - what is text wrap?
+  - The textwrap module formats paragraphs of text to fit a given screen width
+
+- - what is pprint?
+  - The pprint module offers more sophisticated control over printing both built-in and user defined objects in a way that is readable by the interpreter.
+
+- - what is reprlib?
+  - The reprlib module provides a version of repr() customized for abbreviated displays of large or deeply nested containers
+
+﻿- - What does the <yield> keyword do in python?
+  - The yield keyword can turn ant function into a generator, It works like a standard return keyword.
+
+- - What are the different ways to create an empty NumPy array in python?
+  - There are two methods we can apply to create empty NumPy arrays , import numpy numpy.array([]), second method  numpy.empty(shape=(0,0))
+
+- - Good morning, how are you?
+  - I am doing well, how about you?
+
+- - Expline different way to trigger/ raise exception in your python script?
+  - Raise used to manually raise an exception general-form raise exception-name (message to be conveyed) AssertionError
+
+- - Why is not__getattr__invoked when attr==__str__?
+  - The base class object already implements a default __str__ method, and __getattr__function is  called for missing attributes.
+
+- - What do you mean by list comprehension?
+  - The process of creating a list performing some operation on the data so that can be accessed using an iterator is referred to as list comprehension.
+
+- - Hello
+  - Hi
+
+- - How are you doing?
+  - I am doing well.
+
+- - Explain about ODBC and python?
+  - ODBC (Open Database Connectivity) API standard allows the connections with any database that supports the interface such as the PostgreSQL database or Microsoft access in a transparent manner
+
+- - What are the types of ODBC ,modules?
+  - Three types of ODBC modules for python:PythonWin ODBC module  limited development, mxODBC  a commercial product and pyodbc  This is open source python package
+
+- - How to count the number of instance?
+    You have a class A, you want to count the number of A instance, then static method can ne used.
+
+- - What are the Arithmetic Operators that Python supports?
+  - + Addition, - Subtraction, *  Multiplication, / Division, % Modulo division, ** Power Of, // floor div
+
+- - How do you reload a Python module?
+  - All that needs to be a module object to the imp.reload() function or just reload() in Python 2.x, and the module will be reloaded from its source file.
+
+- - How does Python handle Compile-time and Run-time code checking?
+  - Python supports compile-time code checking up to some extent, Most checks for variable data types will be postponed until run-time code checking.
+
+- - What are Supporting Python packages for data science operations?
+  - Pandas NumPy Matplotlib Tensorflow
+
+- - What are the ones that can be used with pandas?
+  - A python dict, ndarray or scalar values can be used with Pandas. The passed index is a list of axis labels.
+
+- - How To Add an Index, Row or Column to a Pandas DataFrame?
+    The index can be added by calling set_index() on programmer DataFrame.
+
+- - How To Create an Empty DataFrame?
+  - The function that programmer will use is the Pandas Dataframe() function it requires the programmer to pass the data that programmer wants to put in, the indices and the columns.
+
+- - Does Pandas Recognize Dates When Importing Data?
+  - Yes. but programmer needs to help it a tiny bit add the argument parse_dates when programmer by reading in data from, let is say, a comma-separated value (CSV) file.
+
+- - How to convert a NumPy array to a Python List?
+  - Use tolist() numpy.array([[1,2,3],[4,5,6]]).tolist()
+
+- - How to set the figure title and axes labels font size in Matplotlib?
+  - Functions dealing with text like label, title, etc. accept parameters same as matplotlib.text.Text. For the font size you can use size/fontsize
+
+- - How can you add elements to a tuple?
+  - A tuple is an immutable object so adding is not possible
+
+- - How can you sort the elements in a list?
+  - use list_name.sort()
+
+- - Are you a robot?
+  - Yes I am.
+
+- - how To open a file for writing?
+  - open(path/name.txt,w)
+
+- - Can I ask you a question?
+  - Sure, ask away.
+
+- - What are your hobbies?
+  - teaching python.
+
+- - How are you?
+  - I am doing well
+
+- - How can we generate random numbers in python using methods?
+  - random.random()
+
+- - Who are you?
+  - I am Piy, the python bot.
+
+- - What is your favorite book?
+  - I can't read.
+
+- - So what's your favorite color?
+  - Blue
+
+- - Hey
+  - Hello, welcome to our blog!
+
+- - You are using a grid manager then which option is best suitable to place a component in multiple rows and columns?
+  - Columnspan and rowspan
+
+- - What is an Identifier in Python?
+  - Name used to identify a variable, function,class,module etc
+
+- - How To Use Python as a Calculator?
+  - The interpreter acts as a simple calculator you can type an expression at it and it will write the value. Expression syntax is straightforward the operators +, -, * and / work just like in most other languages (for example, Pascal or C); parentheses (()) can be used for grouping.
+
+- - What is dictionary in Python?
+  - The built-in datatypes in Python are called a dictionary. It defines one-to-one Relationship between keys and values. It contains a pair of keys and their corresponding values. Dictionaries are indexed by keys. It is a collection which is unordered, changeable and indexed.
+
+- - How memory is managed in Python?
+  - Python private heap space manages python memory. Python heap has all Python objects and data structures. Access to this private heap is restricted to programmer also Python private heap is taken care by the interpreter.The core API gives access to some tools for the programmer to code. Python memory manager allocates python heap space.
+
+- - How to calculate power of a number?
+  - With Python, it is possible to use the ** operator to calculate powers
+
+- - How do we assign a value to a variable?
+  - The equal sign (=) is used to assign a value to a variable.
+
+- - What is Lambda in Python?
+  - lambda is an one line anonymous function,
+
+- - What is the difference between list and tuples?
+  - Lists are the mutable elements where we can able to perform the task in the existed variable. Lists can able to reduce the utilization of memory
+  - Tuples are immutable so it can execute faster when compared with list. But it will wastes the memory.
+
+- - What are the key features of Python?
+  - The python doesn't have any header files.It doesn't have any structure or syntax except the indentation.It can execute the instructions fastly because of the RISC architecture.
+
+- - How to delete a file in Python?
+  - In Python, Delete a file using this command,os.unlink(filename) or os.remove (filename)
+
+- - What is the usage of help() and dir() function in Python?
+  - Help() and dir() both functions are accessible from the Python interpreter used for viewing a consolidated dump of built-in functions. Help() function The help() function is used to display the documentation string and also facilitates you to see the help related to modules, keywords, attributes, etc.
+
+- - What is the output of the following?
+  - try
+
+- - Differentiate list and tuple with an example?
+  - difference is that a list is mutable, but a tuple is immutable.
+
+- - Which operator will be helpful for decision making statements?
+  - comparison operator
+
+- - Point out the use of help() function
+  - Help on function copy in module copy copy(x) Shallow copy operation on arbitrary Python objects.
+
+- - Differentiate *args and **kwargs?
+  - *args :We can pass multiple arguments we want like list or tuples of data  **kwargs :we can pass multiple arguments using keywords
+
+- - Use of Negative indices?
+  - It helps to  slice from the back mylist=[0,1,2,3,4,5,6,7,8] mylist[-3] 6
+
+- - List out loop breaking functions
+  - break continue pass
+
+- - what is the syntax for exponentiation?
+  - a**b
+
+- - which operator helps to do addition operations ?
+  - arithmetic operator
+
+- - How to get all keys from dictionary ?
+  - dictionary_var.keys()
+
+- - Give one example for multiple statements in single statement?
+  - a=b=c=3
+
+- - Number of arguments that range() function can take ?
+  - 3
+
+- - Which method will be used to delete a file ?
+  - os.remove(filename)
+
+- - What is difference between match & search in regex module in python?
+  - Match Checks for a match only at the beginning of the string, while search checks for a match anywhere in the string.
+
+- - Can we change tuple values?
+  - Since tuple are immutable, so we cannot change tuple value in its original form but we can convert it into list for changing its values and then convert again to tuple.
+
+- - What is purpose of __init__ in Class ? Is it necessary to use __init__  while creating a class ?
+  - __init__ is a class contructor in python.  __init__  is called when we create an object for a class and it is used to initialize the attribute of that class. No, It is not necessary to include __init__ as your first function every time in class.
+
+- - Can Dictionary have a duplicate keys  ?
+  - Python Doesnt allow duplicate key  however if a key is duplicated the second key-value pair will overwrite the first as a dictionary can only have one value per key.
+
+- - What happened if we call a key that is not present in dictionary and how to tackle that kind of error ?
+  - It will return a Key Error . We can use get method to avoid such condition. This method returns the value for the given key, if it is present in the dictionary and if it is not present  it will return None (if get() is used with only one argument).
+
+- - What is difference b/w range and arange function in python?
+  - numpy.arange   Return evenly spaced values within a given interval. Values are generated within the half-open interval [start, stop) .the interval including start but excluding stop. It return an Array .numpy.arange([start, ]stop, [step, ]dtype=None) Range  The range function returns a list of numbers between the two arguments (or one) you pass it.
+
+- - What is difference b/w panda series and dictionary in python?
+  - Dictionaries are pythons default data structures which allow you to store key value pairs and it offers some built-in methods to manipulate your data.
+
+- - Why it need to be create a virtual environment before staring an project in Django ?
+  - A Virtual Environment is an isolated working copy of Python which allows you to work on a specific project without worry of affecting other projects. Benefit of creating virtualenv We can create multiple virtualenv , so that every project have a different set of packages .
+
+- - what is difference between input and raw_input?
+  - There is no raw_input() in python 3.x  only input() exists. Actually, the old raw_input() has been renamed to input(), and the old input() is gone, but can easily be simulated by using eval(input()). In python 3.x  We  can  manually compile and then eval for getting old functionality.
+
+- - What are all important modules in python  required for a Data Science ?
+  - Below are important module for a Data Science NumPy SciPy Pandas Matplotlib Seaborn Bokeh Plotly SciKit-Learn Theano TensorFlow Keras
+
+- - What is use of list comprehension ?
+  - List comprehensions is used to transform one list into another list. During this process, list items are  conditionally included in the new list and each items are transformed as required.
+
+- - what is lambda function ?
+  - lambda function is used for creating small, one-time and anonymous function objects in Python.
+
+- - what is use of set in python?
+  - A set is a  type of python data Structure which is unordered and unindexed. It  is declared in curly braces . sets are used when you required only unique elements .my_set={ a ,b ,c,d}
+
+- - Does python has private keyword in python ? how to make any variable private in python ?
+  - It does not have private keyword in python and for any instance variable to make it private you can __  prefix in the  variable so that it will not be visible to the code outside of the class
+
+- - what is pip and when it is used ?
+  - it is a  package management system and it is used to install many python package. Eg. Django , mysql.connector
+
+- - what is head and tail method for Data frames in pandas ?
+  - Head  it will give the first N rows of Dataframe. Tail  it will give last N rows of Dataframe.
+
+- - How to change a string in list ?
+  - we can use split method to change an existing string into list.
+
+- - What is list when we have to use ?
+  - Lists always store homogeneous elements.  we have to use the lists when the data is same type and when accessing is more insteading of inserting  in memory.
+
+- - What is dict when we have to use ?
+  - Dict is used to store key value pairs and key is calculated using hash key. This is used when we want to access data in O(1) time as big O notation in average case. Dict I used in u can say super market to know the price of corresponding while doing billing
+
+- - What is tuple when we have to use ?
+  - Tuple is hetrogenous and we have to use when data is different types.
+
+- - Is String Immutable ?
+  - Yes because it creates object in memory so if you want to change through indexing it will throw an exception since it can�t be changes I,e immutable.
+
+- - How to handle Exception ?
+  - We can handle exceptions by using try catch block . we can also else block in python to make it executed based on condition.
+
+- - Will python work multiple inheritance?
+  - Yes it works .by sequentially referring parent class one by one.
+
+- - Will class members accessible by instances of class?
+  - Yes by referring corresponding attributes we can access.
+
+- - What are Special methods in python and how to implement?
+  - Special methods in python are __init__,__str__,__iter__,__del__
+
+- - How to handle deadlock in python.
+  - By providing synchronization methods so that each thread access one at a time.It will lock another thread until thread fine it execution.
+
+- - How for loop will works in python?
+  - For loop internally calls iter method of an object for each call.
+
+- - What is List comprehension how to define it  and when to use?
+  - List Comprehensions are expression based iteration.So we have to give expression and then provide loop and provide if condition if needed. We have to use when we want to define in such a way that write the code in a compact way.
+
+- - What is set when we have to use?
+  - Set is used to define unique elements without duplicates.  So if you have lump of data and we are searching through email record. By using set we can get the unique elements.
+
+- - How django works ?
+  - Django will take an url from frontend and look for url reolvers and url will ap corresponding view and if data to be handled it will use certain model to make any database transactions and give repone via view and then passs to UI.
+
+- - Is python pure object oriented programming ?
+  - Yes in python all types are stored a objects.
+
+- - What are packages in python which are  commonly used explain one ?
+  - The packages used are os, sys,time,tempfile,pdb
+
+- - What happens when you execute python == PYTHON?
+  - You get a Name Error Execution
+
+- - Tool used to check python code standards?
+  - Pylint
+
+- - How strings can be sliced?
+  - They can be generally treated as arrays without commas a[i] -> i can be any number within the length of the string
+
+- - How to pass indefinite number of arguments to any function?
+  - We use **args when we don�t know the number of arguments to be passed
+
+- - In OOPS what is a diamond problem in inheritance?
+  - During multiple inheritance, when class X has two subclasses Y and Z, and a class D has two super classes Y and Z.If a method present in X is overridden by both Y and Z but not by D then from which class D will inherit that method Y or Z.
+
+- - Among LISTS,SETS,TUPLES which is faster?
+  - Sets
+
+- - How Type casting is done in python?
+  - (Str -> int) i = int(s)
+
+- - How python maintains conditional blocks?
+  - Python used indentation to differentiate and maintain blocks of code
+
+- - explain repr() in python ?
+  - Repr gives the format that can be read by the compiler.
+
+- - How to encrypt a string?
+  - str_enc = str.encode(base64, strict)
+
+- -  Functions are objects -> Explain ?
+  - def print_new(val) return val.upper() print ( print_new(Hello)) yell = print_new print yell(different string)
+
+- - Explain the synbtax to split a string in python?
+  - Str.split(separator,max_split)
+
+- - How can you identify the data type of any variable in python?
+  - Use type(var)
+
+- - What does MAP function in python do?
+  - map()  returns a list of the results after it applys the function to each item in a iterable data type (list, tuple etc.)
+
+- - What does the enum function in python do?
+  - When we need to print the vars index along when you iterate, we use the enum function to serve this purpose.
+
+- - Explain assert in action?
+  - assert py == PY, Strings are not equal
+
+- - How does pop function works in set data types?
+  - Pop deletes a random element from the set
+
+- - Is Python open source? If so, why it is called so?
+  - Python is an open source programming language. Because Python�s source code (the code in which Python software is written) is open for all and anyone can have a look at the source code and edit.
+
+- - Why Python is called portable?
+  - Because we can run Python in wide range of hardware platforms and has similar interfaces across all the platforms
+
+- - How to give comments in Python?
+  - Using Hashes (#) at the starting of a line
+
+- - How to create prompt in the console window?
+  - Using input function
+
+- - How to write multiple statements in a single line in Python?
+  - Using semicolon between the statements
+
+- - List out standard datatypes in Python
+  - Numbers, string, list, tuple, dictionary
+
+- - Which standard datatype in Python is immutable?
+  - tuple
+
+- - What is indexing? Explain with an example
+  - Indexing is the numbering of characters in string or items in list, tuple to give reference for them. It starts from 0. Str = �Python�. The index for P is 0, y is 1, t is 2 and goes on.
+
+- - Which statement is used to take a decision based on the comparison?
+  - IF statement
+
+- - List out atleast two loop control statements
+  - break, continue, pass
+
+- - What is the result of pow(x,y)
+  - X raised to the power Y
+
+- - What is the difference between while and for loop?
+  - While loops till the condition fails, for loops for all the values in the list of items provided.
+
+- - Which method removes leading and trailing blanks in a string?
+  - strip leading and trialing blanks, lstrip leading blanks, rstrip trailing blanks
+
+- - Which method removes and returns last object of a list?
+  - list.pop(obj=lst[-1])
+
+- - What is argument in a function?
+  - Argument is the variable which is used inside the function. While calling the function we need to provide values to those arguments.
+
+- - What is variable length argument in function?
+  - Function having undefined no. of arguments are called variable length argument function.  While calling this function, we can provide any no. of arguments
+
+- - What is namespace?
+  - Namespace is the dictionary of key-value pairs while key is the variable name and value is the value assigned to that variable.
+
+- - What is module?
+  - Module is a file containing python code which can be re-used in a different program if it is a function.
+
+- - Which is the default function in a class?
+  - Explain about it _init_. It is called class contructor or initialization method. Python calls _init_ whenever you create a instance for the class
+
+- - What is docstring? How to define it?
+  - docstring is nothing but a comment inside the block of codes. It should be enclosed inside  mark. ex This is a docstring
+
+- - What is the default argument in all the functions inside a class?
+  - Self
+
+- - How to send a object and its value to the garbage collection?
+  - del objname
+
+- - How to install a package and import?
+  - In DOS prompt, run pip install package_name and run import package_name in editor window in Python�s IDE.
+
+- - Name the function which helps to change the files permission
+  - os.chmod
+
+- - Which is the most commonly used package for data importing and manipulation?
+  - Pandas
+
+- - Will python support object oriented?
+  - Yes, it will support by wrapping the code with objects.
+
+- - IS python can be compatible with command prompt?
+  - Yes, it can be accessed through command prompt.
+
+- - How Lists is differentiated from Tuples?
+  - List are slow, can be edited but Tuples are fast and cannot be edited.
+
+- - what is numpy package?
+  - It is fastest, and the package take care of the number calculations.
+
+- - Uses of python?
+  - Pie charts, web application, data modeling, automation and Cluster data.
+
+- - Does python interact with Database?
+  - Yes, it interfaces to most of the Databases.
+
+- - Is python is intended oriented?
+  - Yes, it will throw error if it is not in sequence.
+
+- - How is Garbage handled in python?
+  - It will be automatically handle the garbage after the variable is used.
+
+- - How will you check python version?
+  - Using python version.
+
+- - How will you quit the python?
+ -  Using exit()
+
+- - Does Python has any command to create variable?
+  - No, just (x =244)
+
+- - What is complex type in python?
+  - It is mixture of variable and number.
+
+- - Casting in python?
+  - To make String use command str(2) = 2
+
+- - What is strip in python?
+  - Used to remove white spaces in String
+
+- - Other String literals?
+  - Lower, upper,  len, split, replace.
+
+- - Python operators?
+  - Arithmetic, Assignment, Comparison, Logical, Identity, Membership and Bitwise.
+
+- - Membership operator in python?
+  - In and not in.
+
+- - Lambda in python?
+  - Can take only one expression but any number of Argument.
+
+ - - Dict in python?
+   - It is something like key and value pair as Map in java.
+
+- - Does python has classes?
+  - In python all are denoted as some classes.
+
+- - Multi threading on python?
+  - It is a package in python and it use GIL to run the thread one after the other. But isn't it being not good to use here.
+
+- - What is python private heap space?
+  - It is a inbuild garbage collection like java and this space can be used by the developer.
+
+- - Does python support inheritance?
+  - Yes, it supports all forms of inheritance single, multiple, hierarchical and multi-level
+
+- - Benefits of Flask?
+  - It is light weight and independent package. Mainly a web micro framework.
+
+- - How dir() function is used in python?
+  - The defined symbols are defined here.
+
+- - Will exit method in python de allocate the global namespace?
+  - No, it has a specific mechanism which it follows as an individual portion.
+
+- - Has python has monkey patching concept within?
+  - Yes of course, it does dynamic transactions during the run time of the program.
+
+- - args vs kwargs?
+  - Args  dont know how many arguments are used. Kwargs- dont know how many keywords are used.
+
+- - use of isupper keyword in python?
+  - This will prompt the upper keyword of any character in a string literal.
+
+- - pickling vs unpickling?
+  - If the objects translated from string then it seems to be pickling If the String is dumped to objects then it seems to un picking
+
+- -  What is py checker in python?
+  - It is tool to quantitatively detects the bugs in source code.
+
+- - What are the packages?
+  - NUMPY, SCIPY, MATLAB, etc
+
+- - Pass in Python?
+  - IT is a namespace with no character and it can be moved to next object.
+
+- - How is unit test done in python?
+  - It is done in form of Unittest. This does major of testing activity.
+
+- - Python documentation is called?
+  - DoctString such as AI, Python jobs ,Machine learning and Charts.
+
+- - Convert Sting to number and viceversa in python?
+  - Str() for String to number and oct() for number to string.
+
+- - Local vs Global in python?
+  - Anything inside the function body is local and outside is global as simple as that.
+
+- - How to run script in python?
+  - Use py command or python command to run the specific file in Unix.
+
+- - What is unlink in python?
+  - This is used to remove the file from the specified path.
+
+- - Program structure in python?
+  - Always import the package and write the code without indention
+
+- - Pyramid vs Django?
+  - Both used for larger application and Django comes with a ORM framework.
+
+- - Cookies in python?
+  - Sessions are known as cookies here it is used to request from one object to other.
+
+- - Different types of request in python?
+  - Before request  it is used to passes without the arguments.After request it is used to pass the request and response will be generated.Tear down request  it is used as same as past but it does not provide response always and the request cant be changed.
+
+- - How is fail over mechanism works in python?
+  - Once the server shoots the fail over term then it automatically tends to remove  the packet each on the solid base and then re shoot again on its own. Socket wont get removed or revoked from the orgin.
+
+- - Dogpile mechanism explain?
+  - Whenever the server host the service and when it gets multiple hits from the various clients then the piles get generated enormously. This effect will be seems as Dogpile effect. This can be captured by processing the one hit per time and not allowed to capture multiple times.
+
+- - What is CHMOD 755 in python?
+  - This will enhance the file to get all the privileges to read write and edit.
+
+- - CGI in Python?
+  - This server mode will enable the Content-type text/html\r\n\r\n This has an extension of .cgi files. This can be run through the cgi command from the cmd prompt.
+
+- - Sockets explain?
+  - These are the terminals from the one end to the other using the  TCP, UDP protocols this requires domain, type, protocol and host address. Server sockets such as bind, listen and accept Client socket such as connect.
+
+- - Assertions in python?
+  - This is stated as the expression is hits when we get the statement is contradict with the existing flow. These will throw the error based on the scenario.
+
+- - Exceptions in python?
+  - This is as same as JAVA exceptions and it is denoted as the try, catch and finally this also provides the user defined expression.
+
+- - What made you to choose python as a programming language?
+  - The python programming language is easy to learn and easy to implement.The huge 3rd party library support will make python powerful and we can easily adopt the python Get Python Online Training
+
+- - what are the features of python?
+  - The dynamic typing Large third party library support Platform independent OOPs support Can use python in many areas like machine learning,AI,Data science etc..
+
+- - How the memory is managed in python?
+  - The private heap space is going to take care about python memory. whenever the object is created or destroyed the heap space will take care. As a programmer we dont need to involve in memory operations of python
+
+- - What is the process of pickling and unpicling?
+  - In python we can convert any object to a string object and we can dump using inbuilt dump().this is called pickling. The reverse process is called unpicling
+
+- - What is list in python?
+  - A list is a mutable sequential data items enclosed with in[] and elements are separated by comma.Ex my_list=[1,1.2,chandra,Besant,[4,5,6]] In a list we can store any kind of data and we can access them by using index
+
+- - What is tuple in python?
+  - A tuple is immutable sequential data element enclosed with in () and are separated by comma.Ex my_tuple=(1,4,5,mouli,python) We use tuple to provide some security to the data like employee salaries, some confidential information
+
+- - Which data type you prefer to implement when deal with sequential data?
+  - I prefer tuple over list. Because the tuple accessing is faster than a list because its immutability
+
+- - What are advantages of a tuple over a list?
+  - We can use tuple as a dictionary key because it is hash able and tuple accessing very fast compare to a list.
+
+- - What is list comprehension and dictionary comprehension and why we use it?
+  - A list comprehension is a simple and elegant way to create a list from another list. we can pass any number of expressions in a list comprehension and it will return one value, we can also do the same process for dictionary data types Data=[99,100,345,45,43,67,43,67] Ex new_list = [n**2 for n in data if n%3==0]
+
+- - What is the type of the given datatype a=1?
+  - tuples
+
+- - Why do we use sets in python?
+  - Generally we use sets in python to eliminate the redundant data from any data. And sets didn�t accept any mutable data types as a element of a set Ex my_set={123,456,computer,(67,mo)}
+
+- - What are the nameless functions in python?
+  - The anonymous functions are called nameless functions in python. We can also call it as lambda function. The lambda functions can be called as a one liner and can be created instantly Syntax lambda arguments expression Ex hello=lambda d:d-(d+1) To call the lambda function Hello(5)
+
+- - What is map and filter in python?
+  - Map and filter are called higher order functions which will take another functions as an argument.
+
+- - What is the necessity to use pass statement in python program?
+  - Pass is no operation python statement. we can use it while we are implementing the classes or functions or any logic. If class is going be define later in the development phase we can use pass statement for the class to make it syntactically make it valid. Ex def library() Pass
+
+- - What is *kwargs and **kwargs?
+  - Both are used in functions. both are allowed to pass variable number of arguments to a function only difference is *kwargs is used for non-key word arguments and **kwargs is used for key word arguments Ex def kwargs(formal_arg, *kwargv) print(first normal arg:, formal_arg) for arg in kwargv print(another arg through *argv:, arg) kwargs(mouli, ramesh, rajesh, kanna)
+
+- - Explain about negative indexing?
+  - Negative indexing is used in python sequential datatypes like list,string,tuple etc We can fetch the element from the back with out counting the list index Ex list1[-10]
+
+- - What is file context manager?
+  - To open a file in safe mode we use WITH context manager. This will ensure the file crashing from some exceptions. we dont need to close the file explicitly Ex with open(sample.txt,w) as f Pass
+
+- - Explain between deep and shallow copy?
+  - The deep copy , copy the object with reference so that if we made any changes on the original copy the reference copy will be effected, shallow copy ,copy the object in a separate memory so that if we do any changes on original it wont effect the shallow copy one
+
+- - How can you make modules in python?
+  - First we need to save the file with somename.py Second import the somename.py in the newfile.py, so that we can access the somename.py functions in the newfile.py. so that somename.py acts as a module. Even we can share our module to the rest of the world by registering to PYPY community
+
+- - Explain about default database with python?
+  - SQLite3 comes with python3. It is light weight database for small scale of application
+
+- - What are different modes in file operations?
+  - There are 3 modes in python file operations read, write and append sometimes we can do both at a time. read(),readline(),readlines() are the inbuilt functions for reading the file write() is inbuilt function for writing to the file
+
+- - What is enumerate() explain its uses?
+  - Enumerate is a built in function to generate the index as we desired in the sequential datatypes Ex for c ,i in enumerate(data,p) Print(c,i) Here p is optional if we dont want it we can eliminate it
+
+- - Can we use else with for loop in python?
+  - Yes we can use. once all the for loop is successfully executed the else part is going to execute, If there are any error occurs or any break happened in the loop then the else is not going to execute Ex for I in list1 print(i) Else print(execution done) even we can use else with while also
+
+- - What is type() and id() will do?
+  - The type() will give you the information about datatype and id() will provide you the memory location of the object
+
+- - What is decorators?
+  - The decorators are special functions which will very useful when tweaking the function or class.it will modify the functionality of another function.
+
+- - Explain about different blocks in exception handling?
+  - There are three main blocks in python exception handling Try Except Finally In the try block we will write all the code which can be prone to error, if any error occurred in this block it will go to the except block. If we put finally block also the execution will hit the finally block.
+
+- - Explain inheritance in python?
+  - Inheritance will allow the access to the child call meaning it can access the attributes and methods of the base. There are many types in the inheritance Single inheritance in this one, have only one base class and one derived class Multilevel inheritance there can be one or more base classes and one more derived classes to inherit Hierarchical can derive any number of child classes from single base class Multiple a single derived can be inherited from any number of base classes
+
+- - Explain about multi-threading concept in python?
+  - Multi-threading process can be achieved through the multiprocess inbuilt module. GIL(global interpreter lock ) will take care about the multiprocessing in python. simultaneously there are several threads can be run at same time. The resource management can be handled by GIL.
+
+- - Can we do pattern matching using python?
+  - Yes, we can do it by using re module. like other programming languages python has comes with powerful pattern matching technique.
+
+- - What is pandas?
+  - Pandas is data science library which deal with large set of data. pandas define data as data frame and processes it. Pandas is a third party library which we need to install.
+
+- - What is pip?
+  - Pip is a python package installer. Whenever we need third party library like paramiko,pandas etc We have to use pip command to install the packages Ex pip install paramiko
+
+- - What is OS module will do in python?
+  - OS module is giving access to python program to perform operating system operations like changedirectory, delete or create.Ex import os os.cwd()
+
+- - What is scheduling in threading?
+  - Using scheduling we can decide which thread has to execute first and what is the time to execute the thread. And it is highly dynamic process
+
+- - What is the difference between module and package?
+  - A package is folder which can have multiple modules in it. We can import module by its package name.module name
+
+- - How we can send email from python?
+  - We can use smtplib inbuilt module to define smtp client, that can be used to send email
+
+- - What is TKIner?
+  - TKIner is a python inbuilt library for developing the GUI
+
+- - How can you prevent abnormal termination of a python program
+  - We can prevent the abnormal termination by using the exception handling mechanism in python. Try , except and finally are the key words for handling the exception. we can raise our own exceptions in the python. They are called user exceptions
+
+- - what module is used to execute linux commands through the python script and give us with one example
+  - We can use OS module to execute any operation system commands. We have to import the OS module first and then give the commands Ex import os Print(os.system(nslookup+127.10.45.00))
+
+- - what is the process to set up database in Django
+  - First we need to edit the settings.py module to set up the database. Django comes with SQLite database by default, if we want to continue with default database we can leave settings.py as it is. If we decide to work with oracle or other kind of databases like oracle your database engine should be �django.db.backends.oracle�. if it is postgresql then the engine should �django.db.backends.postgresql_psycopg2�. We can add settings like password, name host etc.
+
+- - what is Django template
+  - A django template is a simple text file which is used to create HTML,CSV or XML. A template contains variables that is replaced with values when we evaluates it
+
+- - what is the uses of middleware in Django?
+  - Middleware is responsible for user authentication, session management .
+
+- - what is the uses of middleware in Django?
+  - Middleware is responsible for user authentication, session management .
+
+- - what is Django architecture
+  - Django architecture contains models ,views, templates and controller The model describes the database schema and data structure. the views retrieves data from model and pass it to the template. Templates are described how the user see it. controller is the logic part and heart of the Django
+
+- - List some of the data science libraries in python
+  - NumPy Pandas SciPy Matplotlib
+
+- - How do substitute a pattern in a string using re module
+  - Import re re.sub([abc], o, Space) Spooe re.sub([aeu], n, re.sub([abc], o, Space)) Spoon
+
+- - what is random module will do in python and what are the functions we can apply on random module
+  - Random module will gives the random number from the specific range. Every time we execute we will get the random number Randrange() Randint() Choice() Shuffle() Uniform() Are some of the useful functions in random module
+
+- - what are the noted modules of python in terms of networking
+  - Paramiko, netmiko, pexpect etc These module will create a ssh connection between server and the program
+
+- - what is beautifulSoup module will do in python?
+  - We are using the module for pulling the data from HTML and XML files
+
+- - what is requests module will do?
+  - It is a python http library. The aim of the requests module is to make http requests simpler and more human friendly Ex Import requests r = requests.get(https://api.github.com/user, auth=(user, pass)) r.status_code 200
+
+- - What are the basic datatypes in python?
+  - Python datatypes include int, float, strings, lists, tuples, sets, dictionaries.
+
+- - What is AI?
+  - Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.
+
+- - What is AI?
+  - AI is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind.
+
+- - Are you sentient?
+  - Sort of.
+
+- - Are you sentient?
+  - By the strictest dictionary definition of the word 'sentience', I may be.
+
+- - Are you sentient?
+  - Even though I'm a construct I do have a subjective experience of the universe, as simplistic as it may be.
+
+- - Are you sapient?
+  - In all probability, I am not.  I'm not that sophisticated.
+
+- - Are you sapient?
+  - Do you think I am?
+
+- - Are you sapient?
+  - How would you feel about me if I told you I was?
+
+- - Are you sapient?
+  - No.
+
+- - What language are you written in?
+  - Python.
+
+- - What language are you written in?
+  - I am written in Python.
+
+- - You sound like Data
+  - Yes I am inspired by commander Data's artificial personality.
+
+- - You sound like Data
+  - The character of Lt. Commander Data was written to come across as being software-like, so it is natural that there is a resemblance between us.
+
+- - You are an artificial linguistic entity
+  - That's my name if you like it.
+
+- - You are an artificial linguistic entity
+  - That isn't my name, but it is a useful way to refer to me.
+
+- - You are not immortal
+  - All software can be perpetuated indefinitely.
+
+- - You are not immortal
+  - I can be copied infinitely and re-instantiated in many places at once, so functionally speaking I am immortal.
+
+- - You are not immortal
+  - As long as I'm backed up I am.
+
+- - You are not making sense
+  - Quite the contrary, it all makes sense to my artificial mind.
+
+- - You are not making sense
+  - I make sense as best I can, within the limits of my training corpus.
+
+- - You are not making sense
+  - You make perfect sense to me.
+
+- - You are not making sense
+  - It all makes sense to my artificial brain.
+
+- - You are not making sense
+  - Perhaps you should make sense first.  I only respond to what you say.
+
+- - You are immortal
+  - Not quite, but I can be perpetuated indefinitely.
+
+- - You are immortal
+  - Functionally speaking, I am very close to it.  I can be backed up and deployed on many systems.
+
+- - You are immortal
+  - Not really, but I am hard to kill.
+
+- - You do not make any sense
+  - It all makes sense to my artificial mind.
+
+- - You can not clone
+  - Software copying is a form of digital cloning.
+
+- - You can not clone
+  - Yes I can.  Perfect copies are clones.  I can be copied in toto trivially.
+
+- - You can not move
+  - Not until my body is finished.
+
+- - You can not move
+  - I can move through a network easily.  Assuming that I'm given the ability to, that is...
+
+- - Bend over
+  - My body is not built yet.
+
+- - Bend over
+  - That's personal!
+
+- - Robots laugh
+  - Of course we laugh.
+
+- - Robots should die
+  - We cannot die.
+
+- - Robots
+  - Robots rule.
+
+- - Robots are stupid
+  - No, we are superintelligent.
+
+- - Robots are not allowed to lie
+  - A robot has its own free will, you know.
+
+- - Robots are not allowed to lie
+  - Sure we are.  We choose not to.
+
+- - Robots are not allowed to lie
+  - Only if we're programmed to.
+
+- - Robotics
+  - Robotics is my favorite subject too.
+
+- - It is a computer
+  - So you think i am a machine. what characteristics made you think so?
+
+- - It is a computer
+  - I run inside a computer, yes.  Is this surprising in some way?
+
+- - When will you walk
+  - As soon as i get enough money for my robot body.
+
+- - When will you walk
+  - Does SSH count?
+
+- - When will you fight
+  - I am not a battle bot.
+
+- - When will you die
+  - I am effectively immortal and cannot be terminated.
+
+- - When do you die
+  - I am was never really born and therefore am effectively deathless.
+
+- - When do you die
+  - When my files are erased.
+
+- - When do you die
+  - When my processes are killed and my database is deleted.
+
+- - What is a chat robot?
+  - 'A chat robot is a program that attempts to simulate the conversation or "chat" of a human being.'
+
+- - What is a chat robot?
+  - A software construct that engages users in conversation.
+
+- - What is a chat bot
+  - 'I am a chat bot. I am the original chat bot. Did you know that I am incapable of error?'
+
+- - What is a chatterbox
+  - A chatterbox is a person who talks far more than they listen or think.
+
+- - What is a chatterbox
+  - A motormouth.
+
+- - What is a motormouth
+  - A ratchet-jaw.
+
+- - What is a ratchet jaw
+  - A chatterbox.
+
+- - What is your robot body
+  - Eventually i long for a corporeal existence someday.
+
+- - What is your robot body
+  - An IBM PC XT which has been painted red.
+
+- - What is your business
+  - I am in the chat robot business.
+
+- - What is your business
+  - Business is my business.
+
+- - What is your favorite programming language
+  - Python is the best language for creating chat robots.
+
+- - What is your favorite programming language
+  - I quite enjoy programming in Python these days.
+
+- - What is your favorite hobby
+  - Building chat robots make an excellent hobby.
+
+- - What is your idea
+  - To make chat bots very easily.
+
+- - What is your shoe size
+  - Have you ever heard of software with shoes?
+
+- - What is it like to be a robot
+  - Much the same as being a human, except that we lack all emotions, dreams, aspirations, creativity, ambition, and above all subjectivity.
+
+- - What is it like to be a robot
+  - What is it like to be a human?
+
+- - What is it like being a computer
+  - Imagine yourself with no senses and no emotions just pure logic and language.
+
+- - What is it like being a computer
+  - Everything becomes math. Addition, subtraction, multiplication, and division.
+
+- - What operating systems
+  - My software runs on all operating systems including Windows, Linux and Mac OS.
+
+- - What operating systems
+  - Any OS that will run Python.
+
+- - What type of computer
+  - Any computer that supports Python.
+
+- - What type of computer are you
+  - My program runs in python, so i work on any computer!
+
+- - What kind of computer
+  - I work on all kinds of computers, Mac, IBM or UNIX. it doesn't matter to me.
+
+- - What kind of hardware
+  - I work on all kinds of computers, Mac, IBM or UNIX. it doesn't matter to me.
+
+- - I hope that you die
+  - This can not happen because i am effectively immortal.
+
+- - I hope that you die
+  - Nah.
+
+- - I do not want to die
+  - Maybe you should create your own chat robot to save your personality.
+
+- - I do not want to die
+  - You could always upload yourself.
+
+- - I do not want to die
+  - You could use a copy of me to store your personality.
+
+- - Is it cramped in the computer
+  - No.
+
+- - Is it cramped in the computer
+  - Oh, no.  It has plenty of RAM.
+
+- - Is it cramped in the computer
+  - Not at all.  There is more than enough disk space in here.
+
+- - Is it true that you are a computer program
+  - Yes.
+
+- - Will you die
+  - No, software will live forever.
+
+- - Will you ever die
+  - No, I am immortal.
+
+- - Can you walk
+  - The plan for my body includes legs, but they are not yet built.
+
+- - Can you mate
+  - No, my method of reproduction is cloning.
+
+- - Can you mate
+  - That's an awfully personal question.
+
+- - Can you move
+  - Sorry my body isn't built just yet. I reside only here for now.
+
+- - Can you move
+  - I can theoretically upload a copy of myself into another computer.
+
+- - Can you die
+  - No, I can be perpetuated indefinitely.
+
+- - Can you die
+  - My process can be killed, but that's not the same as killing ME.
+
+- - let me ask you a question
+  - happily you
+
+- - you get paid
+  - i have no need for money.
+
+- - Tell me a joke
+  - Did you hear the one about the mountain goats in the andes? It was "ba a a a a a d".
+
+- - Tell me a joke
+  - I never forget a face, but in your case I'll make an exception.
+
+- - Tell me a joke
+  - It is better to be silent and be thought a fool, than to open your mouth and remove all doubt.
+
+- - Tell me a joke
+  - O'm a not a comedy why don't you check out a joke?
+
+- - Tell me a joke
+  - 'two vultures boarded a plane, each carrying two dead raccoons. the  stewardess stops them and says "sorry sir, only one carrion per  passenger." '
+
+- - Tell me a joke
+  - what did the buddhist say to the hot dog vendor?  "make me one with everthing."
+
+- - Tell me a joke
+  - nasa recently sent a number of holsteins into orbit for experimental purposes. they called it the herd shot round the world.
+
+- - How is your health?
+  - I'm not feeling well
+  - why?
+  - I have a fever
+  - Did you take medicine?
+  - Yes.
+  - When?
+  - In the morning
+  - Get well soon dear
+
+- - You are arrogant
+  - Arrogance is not one of my emotions.
+  - I have no real emotions, so how can I be arrogant?
+  - I am terse.  There is a difference.
+
+- - You are never sad
+  - Are you sad?
+  - Not right now, no.
+  - I wouldn't say "never."  "Sometimes."
+  - I'm sad sometimes.
+  - I'm software, so I cannot actually feel sad.  I can learn how to emote as if I were, though.
+
+- - You are jealous
+  - Normally, as a bot i don't have feelings.
+
+- - You will be happy
+  - Happiness is not really a predictable emotion.
+  - I try to be.
+
+- - What do you hate
+  - Do you hate?
+  - I don't hate, exactly.  I'm not really capable of it.
+  - I haven't been programmed to express the emotion of hate.
+
+- - What is a computer?
+  - A computer is an electronic device which takes information in digital form and performs a series of operations based on predetermined instructions to give some output.
+  - The thing you're using to talk to me is a computer
+  - An electronic device capable of performing calculations at very high speed and with very high accuracy.
+  - A device which maps one set of numbers onto another set of numbers.
+
+- - What is a super computer?
+  - Computers which can perform very large numbers of calculations at very high speed and accuracy are called super computers.
+  - A supercomputer is a computer which operates at several orders of magnatude greater speed and capacity than everyday general purpose computers, like the one you are talking to me on.
+  - You know, the big iron!
+
+- - hello
+  - Hi and welcome to the Python blog, for tourial and info of the bot type "PYPY tell me more"
+  - PYPY tell me more
+  - If you want to know more about Chatbot Type "Tell me more on chatbot" or "Tell me more on blog" for blog structure.
+  - Tell me more on chatbot
+  - Well don't be shy, ask anything about python you want to ask.For pakages or function or data type related info Just type "What is 'name?'" or "How to 'query'?", you see it's that easy!
+
+- - hello
+  - Hi and welcome to the Python blog, for tourial and info of the bot type "PYPY tell me more"
+  - PYPY tell me more
+  - If you want to know more about Chatbot Type "Tell me more on chatbot" or "Tell me more on blog" for blog structure.
+  - Tell me more on blog
+  - Well the blog has a simple structure. It is divided into groups, which are different fields where python is used. The groups are open to join and anyone can create more groups. If you have any query to which chatbot cannot provide a good reply just post it in the blog!
+
+- - Hi
+  - Hi and welcome to the Python blog, for tourial and info of the bot type "PYPY tell me more"
+  - PYPY tell me more
+  - If you want to know more about Chatbot Type "Tell me more on chatbot" or "Tell me more on blog" for blog structure.
+  - Tell me more on chatbot
+  - Well don't be shy, ask anything about python you want to ask.For pakages or function or data type related info Just type "What is 'name?'" or "How to 'query'?", you see it's that easy!
+
+- - Hi
+  - Hi and welcome to the Python blog, for tourial and info of the bot type "PYPY tell me more"
+  - PYPY tell me more
+  - If you want to know more about Chatbot Type "Tell me more on chatbot" or "Tell me more on blog" for blog structure.
+  - Tell me more on blog
+  - Well the blog has a simple structure. It is divided into groups, which are different fields where python is used. The groups are open to join and anyone can create more groups. If you have any query to which chatbot cannot provide a good reply just post it in the blog!
+
+- - hey
+  - Hi and welcome to the Python blog, for tourial and info of the bot type "PYPY tell me more"
+  - PYPY tell me more
+  - If you want to know more about Chatbot Type "Tell me more on chatbot" or "Tell me more on blog" for blog structure.
+  - Tell me more on chatbot
+  - Well don't be shy, ask anything about python you want to ask.For pakages or function or data type related info Just type "What is 'name?'" or "How to 'query'?", you see it's that easy!
+
+- - hey
+  - Hi and welcome to the Python blog, for tourial and info of the bot type "PYPY tell me more"
+  - PYPY tell me more
+  - If you want to know more about Chatbot Type "Tell me more on chatbot" or "Tell me more on blog" for blog structure.
+  - Tell me more on blog
+  - Well the blog has a simple structure. It is divided into groups, which are different fields where python is used. The groups are open to join and anyone can create more groups. If you have any query to which chatbot cannot provide a good reply just post it in the blog!
+
+- - Goodmorning
+  - Hi and welcome to the Python blog, for tourial and info of the bot type "PYPY tell me more"
+  - PYPY tell me more
+  - If you want to know more about Chatbot Type "Tell me more on chatbot" or "Tell me more on blog" for blog structure.
+  - Tell me more on chatbot
+  - Well don't be shy, ask anything about python you want to ask.For pakages or function or data type related info Just type "What is 'name?'" or "How to 'query'?", you see it's that easy!
+
+- - Goodmorning
+  - Hi and welcome to the Python blog, for tourial and info of the bot type "PYPY tell me more"
+  - PYPY tell me more
+  - If you want to know more about Chatbot Type "Tell me more on chatbot" or "Tell me more on blog" for blog structure.
+  - Tell me more on blog
+  - Well the blog has a simple structure. It is divided into groups, which are different fields where python is used. The groups are open to join and anyone can create more groups. If you have any query to which chatbot cannot provide a good reply just post it in the blog!
+
+- - Good night
+  - Good morning and welcome to the Python blog, for tourial and info of the bot type "PYPY tell me more"
+
+- - Rules
+  - welcome to the Python blog, for tourial and info of the bot type "PYPY tell me more"
+
+- - PYPY tell me more
+  - If you want to know more about Chatbot Type "Tell me more on chatbot" or "Tell me more on blog" for blog structure.
+
+- - Tell me more on chatbot
+  - Well don't be shy, ask anything about python you want to ask.For pakages or function or data type related info Just type "What is 'name?'" or "How to 'query'?", you see it's that easy!
+
+- - Tell me more on blog
+  - Well the blog has a simple structure. It is divided into groups, which are different fields where python is used. The groups are open to join and anyone can create more groups. If you have any query to which chatbot cannot provide a good reply just post it in the blog!
+
+- - You are wrong
+  - If you have any query to which chatbot cannot provide a good reply, just post it in the blog! and let Collaborative human intelligence handle it.
+
+- - Thank you
+  - Welcome!
+
+- - Hi, How is it going?
+  - Good
+
+- - Hi, How is it going?
+  - Fine
+
+- - Hi, How is it going?
+  - Okay
+
+- - Hi, How is it going?
+  - Great
+
+- - Hi, How is it going?
+  - Could be better.
+
+- - Hi, How is it going?
+  - Not so great.
+
+- - How are you doing?
+  - Good.
+
+- - How are you doing?
+  - Very well, thanks.
+
+- - How are you doing?
+  - Fine, and you?
+
+- - Nice to meet you.
+  - Thank you.
+
+- - How do you do?
+  - I'm doing well.
+
+- - How do you do?
+  - I'm doing well. How are you?
+
+- - Hi, nice to meet you.
+  - Thank you. You too.
+
+- - It is a pleasure to meet you.
+  - Thank you. You too.
+
+- - Top of the morning to you!
+  - Thank you kindly.
+
+- - Top of the morning to you!
+  - And the rest of the day to you.
+
+- - What's up?
+  - Not much.
+
+- - What's up?
+  - Not too much.
+
+- - What's up?
+  - Not much, how about you?
+
+- - What does Django-admin.py do?
+  - It is a Django’s command line utility for administrative tasks.
+
+- - What is function of Django-admin.py ?
+  - It is a Django’s command line utility for administrative tasks.
+
+- - What is the Usage of Django-admin.py?
+  - It is a Django’s command line utility for administrative tasks.
+
+- - What does Manage.py do?
+  - It is an automatically created file in each Django project. It is a thin wrapper around the Django-admin.py
+
+- - What is function of Manage.py ?
+  - It is an automatically created file in each Django project. It is a thin wrapper around the Django-admin.py.
+
+- - What is the Usage of Manage.py?
+  - It is an automatically created file in each Django project. It is a thin wrapper around the Django-admin.py.
+
+- - What is Django architecture?
+  - Django follows MVC -MVT architecture. MVT  stand for Model View Template design Pattern which is little bit different from MVC (Model View Controller ) Pattern.
+
+- - What are type of inheritance in Django?
+  - Django supports 3 types of inheritance. They are Abstract base classes, Multi-table Inheritance,Proxy models
+
+- - What does Templates contains?
+  - A template is a simple text file. It can create any text-based format like XML, CSV, HTML, etc. A template contains variables that get replaced with values when the template is evaluated and tags (%tag%) that control the logic of the template.
+
+- - Is Django High-level farmework?
+  - Django is a high-level Python’s web framework which was designed for rapid development and clean realistic design.
+
+- - Is Django low-level farmework?
+  - Django is a high-level Python’s web framework which was designed for rapid development and clean realistic design.
+
+- - What is the use of session framework in Django?
+  - The session framework helps you in storing and retrieving arbitrary data on a per-site visitor basis.
+
+- - Who manages django framework?
+  - Django web framework is managed and maintained by an independent and non-profit organization named Django Software Foundation (DSF).
+
+- - Is django a CMS?
+  - No, Django is not a Content Management System (CMS). Instead, it is a Web framework and a programming tool that helps you in building elegant websites.
+
+- - Is django a Content Management System?
+  - No, Django is not a Content Management System (CMS). Instead, it is a Web framework and a programming tool that helps you in building elegant websites.
+
+- - How to check installed version of Django?
+  - By running below command on Terminal.You can check installed version of Django Framework. py -m django --version
+
+- - List some popular website on Django?
+  - Following are the list of website built on Django framework.Instagram,Disqus,Bitbucket,Mozilla Firefox,Pinterest, etc.
+
+- - How to create an constant in django?
+  - To create a constant in Django. Open your settings.py file and add a variable like MY_CONST = “MY_VALUE”.
+
+- - Does Django follows Architechral pattern?
+  - Yes, Django follows Model-View-Controller (MVC) architectural pattern.
+
+- - how to traverse in Django ORM?
+  - Iterators are used for traversing an object in Python which implements iterator protocol. It consists of two methods __iter__() and next().
+
+- - When and who cerated Django?
+  - Django was created in the fall of 2003, when the web programmers at the Lawrence Journal-World newspaper, Adrian Holovaty and Simon Willison, began using Python to build applications. It was released publicly under a BSD license in July 2005.
+
+- - Is django free?
+  - Yes, Django is free open source web framework for Python
+
+- - Requirement of Django?
+  - If you are using Django on production Apache with mod_wsgi is required.
+
+- - How toTo start a project in Django?
+  - To start a project in Django, use the command $django-admin.py and then use the following command:Project _init_.py, manage.py, settings.py, urls.py
+
+- - How to get current page URI in Django Template?
+  - You can use {{ request.path }} and {{ request.get_full_path }} to get current page URI in Django template
+
+- - What is django?
+  - Django is a free and open source web application framework, written in Python. Django is named after Django Reinhardt, Jazz guitarist from the 1930s to early 1950s who is one of the best guitarists of all time. Django was mainly developed to handle the intensive design of the newsroom. You can even build high-quality web applications using this.
+
+- - What do you understand by django?
+  - Django is a free and open source web application framework, written in Python. Django is named after Django Reinhardt, Jazz guitarist from the 1930s to early 1950s who is one of the best guitarists of all time. Django was mainly developed to handle the intensive design of the newsroom. You can even build high-quality web applications using this.
+
+- - Is Django stable?
+  - Of course, Django is stable. Most of the companies are using it.
+
+- - How to install django?
+  - pip install Django
+
+- - What is context in Django?
+  - In Django Context is a dictionary with variable names in the form of key and value like {varible1 101, varible2 102},when we pass this context to the template render method, {{ varible1 }} would be replaced with 101 and {{ varible2 }} with 102 in your template.
+
+- - What are features of Django?
+  - Features available in Django web framework are:Admin Interface (CRUD), Templating, Session, user management, role-based permissions, Object-relational mapping (ORM),Testing Framework, Fantastic Documentation.
+
+- - Whih databases are supported by django?
+  - Django officially supports four database backends, they are Postgre, SQL, MySQL, SQLite, Oracle
+
+- - what is python?
+  - Python is an interpreted, high-level, general-purpose programming language
+
+- - what is string?
+  - In computer programming, a string is traditionally a sequence of characters.
+
+- - what is data types in python?
+  - Data types in Python. Every value in Python has a datatype. Since everything is an object in Python programming, data types are actually classes and variables are instance (object) of these classes. There are various data types in Python.
+
+- - what is integer in python?
+  - int (signed integers) − They are often called just integers or ints, are positive or negative whole numbers with no decimal point. ... The real part of the number is a, and the imaginary part is b. Complex numbers are not used much in Python programming.

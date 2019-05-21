@@ -29,6 +29,8 @@
            </li>
            <li><a href="{% url 'accounts:logout' %}">Log Out</a>
            </li>
+           <li><a href="{% url 'home'%}">Askbot</a>
+           </li>
            {% else %}
            <li><a href="{% url 'groups:all' %}">Groups</a>
            </li>
@@ -36,12 +38,14 @@
            </li>
            <li><a href="{% url 'accounts:signup'%}">Sign Up</a>
            </li>
+           <li><a href="{% url 'home'%}">Askbot</a>
+           </li>
            {% endif %}
         </ul>
      </div>
 
    </nav>
-<div class="container mycontent">
+<div class="container mycontent" class="addScroll">
   {% block content %}
   {% endblock %}
 </div>

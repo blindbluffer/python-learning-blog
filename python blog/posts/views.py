@@ -9,6 +9,17 @@ from braces.views import SelectRelatedMixin
 
 from . import models
 from . import forms
+from posts.models import Post
+from posts.forms import CommentForm
+
+from django.shortcuts import render,get_object_or_404,redirect
+from django.utils import timezone
+from django.urls import reverse_lazy
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.mixins import LoginRequiredMixin
+
+
+
 
 from django.contrib.auth import get_user_model
 User = get_user_model()
@@ -64,3 +75,18 @@ class DeletePost(LoginRequiredMixin,SelectRelatedMixin,generic.DeleteView):
     def delete(self,*args,**kwargs):
         messages.success(self.request,'Post Deleted')
         return super().delete(*args,**kwargs)
+
+
+@login_required
+def add_comment_to_post(request,pk):
+    post = get_object_or_404(Post,pk=pk)
+    if request.method == 'POST':
+        form = CommentForm(request.POST)
+        if form.is_valid():
+            comment = form.save(commit=False)
+            comment.post = post
+            comment.save()
+    else:
+        form = CommentForm()
+
+    return render(request,'posts/comment_form.html',{'form':form})

@@ -11,6 +11,26 @@
       </a>
     </time>
     </h5>
+
+    <br>
+    <a class='btn btn-primary' href="{% url 'posts:add'  pk=post.pk %}">Add Comment</a>
+
+    <div class="container">
+      {% for comment in post.comments.all %}
+      <br>
+         {% if user.is_authenticated %}
+            {{comment.created_date }}
+
+
+              <p>{{comment.text|safe|linebreaks}}</p>
+              <p>Posted By: {{comment.user }}</p>
+            {% endif %}
+            {% empty %}
+            <p>No Comments</p>
+
+      {% endfor %}
+    </div>
+
     <div class="media-footer">
       {% if user.is_authenticated and post.user == user %}
       <a href="{% url 'posts:delete' pk=post.pk %}" title="delete" class='btn btn-simple'>

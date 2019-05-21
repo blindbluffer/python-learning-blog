@@ -2,6 +2,9 @@ from django.db import models
 from django.urls import reverse
 from django.conf import settings
 # Create your models here.
+from django.db import models
+from django.utils import timezone
+
 import misaka
 
 from groups.models import Group
@@ -29,3 +32,30 @@ class Post(models.Model):
     class Meta:
         ordering = ['-created_at']
         unique_together = ['user','message']
+
+
+class Comment(models.Model):
+    post = models.ForeignKey('posts.Post',on_delete=models.CASCADE,related_name='comments')
+    """author = models.CharField(max_length=200)"""
+    user = models.ForeignKey(User,related_name='comments',on_delete=models.CASCADE)
+    text = models.TextField()
+    text_html = models.TextField(editable=False)
+    created_date = models.DateTimeField(auto_now=True)
+    """approved_comment = models.BooleanField(default=False)"""
+
+    """def approve(self):
+        self.approved_comment = True
+        self.save()"""
+
+    def get_absolute_url(self):
+        return reverse('post_list')
+
+    def __str__(self):
+        return self.text
+
+    def save(self,*args,**kwargs):
+        self.text_html = misaka.html(self.text)
+        super().save(*args,**kwargs)
+
+    class Meta:
+        ordering = ['-created_date']
