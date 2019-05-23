@@ -38,7 +38,11 @@ conversations:
   - Like strings (and all other built-in sequence type), lists can be indexed and sliced, All slice operations return a new list containing the requested elements. This means that the following slice returns a new (shallow) copy of the list
 
 - - How to concatenate a list?
+<<<<<<< HEAD
   -Lists also support operations like concatenation
+=======
+  - Lists also support operations like concatenation
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 
 - - Are list mutable?
   - Unlike strings, which are immutable, lists are a mutable type, i.e. it is possible to change their content
@@ -386,7 +390,11 @@ conversations:
   - Hi
 
 - - How are you doing?
+<<<<<<< HEAD
   -  I am doing well.
+=======
+  - I am doing well.
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 
 - - Explain about ODBC and python?
   - ODBC (Open Database Connectivity) API standard allows the connections with any database that supports the interface such as the PostgreSQL database or Microsoft access in a transparent manner
@@ -440,7 +448,11 @@ conversations:
   - open(path/name.txt,w)
 
 - - Can I ask you a question?
+<<<<<<< HEAD
   -   Sure, ask away.
+=======
+  - Sure, ask away.
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 
 - - What are your hobbies?
   - teaching python.
@@ -516,6 +528,7 @@ conversations:
   - *args :We can pass multiple arguments we want like list or tuples of data  **kwargs :we can pass multiple arguments using keywords
 
 - - Use of Negative indices?
+<<<<<<< HEAD
   - It helps to  slice from the back
 
     mylist=[0,1,2,3,4,5,6,7,8]
@@ -541,6 +554,15 @@ conversations:
 - - what is the syntax for exponentiation and give example?
   - a**b
     2**3 = 8
+=======
+  - It helps to  slice from the back mylist=[0,1,2,3,4,5,6,7,8] mylist[-3] 6
+
+- - List out loop breaking functions
+  - break continue pass
+
+- - what is the syntax for exponentiation?
+  - a**b
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 
 - - which operator helps to do addition operations ?
   - arithmetic operator
@@ -554,17 +576,21 @@ conversations:
 - - Number of arguments that range() function can take ?
   - 3
 
+<<<<<<< HEAD
 - - Give an example to capital first letter of a string?
   - a=test
     print a[0].upper()
     Test
 
+=======
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 - - Which method will be used to delete a file ?
   - os.remove(filename)
 
 - - What is difference between match & search in regex module in python?
   - Match Checks for a match only at the beginning of the string, while search checks for a match anywhere in the string.
 
+<<<<<<< HEAD
 - - Can we change tuple values? If yes, give an example.
   - Since tuple are immutable, so we cannot change tuple value in its original form but we can convert it into list for changing its values and then convert again to tuple.
     Below is the example
@@ -588,10 +614,21 @@ conversations:
     >>> my_dict={a:1 ,b:2 ,b:3}
     >>> print(my_dict)
      {a: 1, b: 3}
+=======
+- - Can we change tuple values?
+  - Since tuple are immutable, so we cannot change tuple value in its original form but we can convert it into list for changing its values and then convert again to tuple.
+
+- - What is purpose of __init__ in Class ? Is it necessary to use __init__  while creating a class ?
+  - __init__ is a class contructor in python.  __init__  is called when we create an object for a class and it is used to initialize the attribute of that class. No, It is not necessary to include __init__ as your first function every time in class.
+
+- - Can Dictionary have a duplicate keys  ?
+  - Python Doesnt allow duplicate key  however if a key is duplicated the second key-value pair will overwrite the first as a dictionary can only have one value per key.
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 
 - - What happened if we call a key that is not present in dictionary and how to tackle that kind of error ?
   - It will return a Key Error . We can use get method to avoid such condition. This method returns the value for the given key, if it is present in the dictionary and if it is not present  it will return None (if get() is used with only one argument).
 
+<<<<<<< HEAD
     Dict.get(key, default=None)
 
 - - What is difference b/w range and arange function in python?
@@ -600,11 +637,16 @@ conversations:
     numpy.arange([start, ]stop, [step, ]dtype=None)
 
     Range  The range function returns a list of numbers between the two arguments (or one) you pass it.
+=======
+- - What is difference b/w range and arange function in python?
+  - numpy.arange   Return evenly spaced values within a given interval. Values are generated within the half-open interval [start, stop) .the interval including start but excluding stop. It return an Array .numpy.arange([start, ]stop, [step, ]dtype=None) Range  The range function returns a list of numbers between the two arguments (or one) you pass it.
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 
 - - What is difference b/w panda series and dictionary in python?
   - Dictionaries are pythons default data structures which allow you to store key value pairs and it offers some built-in methods to manipulate your data.
 
 - - Why it need to be create a virtual environment before staring an project in Django ?
+<<<<<<< HEAD
   - A Virtual Environment is an isolated working copy of Python which allows you to work on a specific project without worry of affecting other projects.
     Benefit of creating virtualenv
     We can create multiple virtualenv , so that every project have a different set of packages .
@@ -654,6 +696,18 @@ conversations:
     my_list2=[i*2 for i in my_list1]
 
     print(my_list2)
+=======
+  - A Virtual Environment is an isolated working copy of Python which allows you to work on a specific project without worry of affecting other projects. Benefit of creating virtualenv We can create multiple virtualenv , so that every project have a different set of packages .
+
+- - what is difference between input and raw_input?
+  - There is no raw_input() in python 3.x  only input() exists. Actually, the old raw_input() has been renamed to input(), and the old input() is gone, but can easily be simulated by using eval(input()). In python 3.x  We  can  manually compile and then eval for getting old functionality.
+
+- - What are all important modules in python  required for a Data Science ?
+  - Below are important module for a Data Science NumPy SciPy Pandas Matplotlib Seaborn Bokeh Plotly SciKit-Learn Theano TensorFlow Keras
+
+- - What is use of list comprehension ?
+  - List comprehensions is used to transform one list into another list. During this process, list items are  conditionally included in the new list and each items are transformed as required.
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 
 - - what is lambda function ?
   - lambda function is used for creating small, one-time and anonymous function objects in Python.
@@ -662,6 +716,7 @@ conversations:
   - A set is a  type of python data Structure which is unordered and unindexed. It  is declared in curly braces . sets are used when you required only unique elements .my_set={ a ,b ,c,d}
 
 - - Does python has private keyword in python ? how to make any variable private in python ?
+<<<<<<< HEAD
   - It does not have private keyword in python and for any instance variable to make it private you can __  prefix in the  variable so that it will not be visible to the code outside of the class .
 
     Eg .  Class A
@@ -673,10 +728,14 @@ conversations:
     def printNum(self)
 
     print self.__num
+=======
+  - It does not have private keyword in python and for any instance variable to make it private you can __  prefix in the  variable so that it will not be visible to the code outside of the class
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 
 - - what is pip and when it is used ?
   - it is a  package management system and it is used to install many python package. Eg. Django , mysql.connector
 
+<<<<<<< HEAD
     Syntax  pip install packagename
 
     pip install Django  to install Django module
@@ -687,10 +746,15 @@ conversations:
     Tail  it will give last N rows of Dataframe.
 
     By default it is 5.
+=======
+- - what is head and tail method for Data frames in pandas ?
+  - Head  it will give the first N rows of Dataframe. Tail  it will give last N rows of Dataframe.
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 
 - - How to change a string in list ?
   - we can use split method to change an existing string into list.
 
+<<<<<<< HEAD
     s= Hello sam good morning
 
     s.split()
@@ -705,13 +769,18 @@ conversations:
 
     print(my_list)
 
+=======
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 - - What is list when we have to use ?
   - Lists always store homogeneous elements.  we have to use the lists when the data is same type and when accessing is more insteading of inserting  in memory.
 
 - - What is dict when we have to use ?
   - Dict is used to store key value pairs and key is calculated using hash key. This is used when we want to access data in O(1) time as big O notation in average case. Dict I used in u can say super market to know the price of corresponding while doing billing
 
+<<<<<<< HEAD
     Get Python 100% Practical Training
+=======
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 - - What is tuple when we have to use ?
   - Tuple is hetrogenous and we have to use when data is different types.
 
@@ -730,6 +799,7 @@ conversations:
 - - What are Special methods in python and how to implement?
   - Special methods in python are __init__,__str__,__iter__,__del__
 
+<<<<<<< HEAD
     __init__-it will initialize when class loads.
 
     __str__-It is used to represent object in a string format.
@@ -738,6 +808,8 @@ conversations:
 
     __del__-It is used to destroy object when it is not required  for memory optimization.
 
+=======
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 - - How to handle deadlock in python.
   - By providing synchronization methods so that each thread access one at a time.It will lock another thread until thread fine it execution.
 
@@ -745,6 +817,7 @@ conversations:
   - For loop internally calls iter method of an object for each call.
 
 - - What is List comprehension how to define it  and when to use?
+<<<<<<< HEAD
   - List Comprehensions are expression based iteration.
 
     So we have to give expression and then provide loop and provide if condition if needed.
@@ -752,6 +825,9 @@ conversations:
     We have to use when we want to define in such a way that write the code in a compact way.
 
     Get Python Training with Real time Live Projects
+=======
+  - List Comprehensions are expression based iteration.So we have to give expression and then provide loop and provide if condition if needed. We have to use when we want to define in such a way that write the code in a compact way.
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 
 - - What is set when we have to use?
   - Set is used to define unique elements without duplicates.  So if you have lump of data and we are searching through email record. By using set we can get the unique elements.
@@ -759,12 +835,16 @@ conversations:
 - - How django works ?
   - Django will take an url from frontend and look for url reolvers and url will ap corresponding view and if data to be handled it will use certain model to make any database transactions and give repone via view and then passs to UI.
 
+<<<<<<< HEAD
     Or django template
 
+=======
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 - - Is python pure object oriented programming ?
   - Yes in python all types are stored a objects.
 
 - - What are packages in python which are  commonly used explain one ?
+<<<<<<< HEAD
   - The packages used are os, sys,time,tempfile,pdb,
 
      Os it is used for file and directories handling.
@@ -790,6 +870,9 @@ conversations:
     print(passed)
     if 1 in (v1, v2, v3)
     print(passed)
+=======
+  - The packages used are os, sys,time,tempfile,pdb
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 
 - - What happens when you execute python == PYTHON?
   - You get a Name Error Execution
@@ -827,7 +910,11 @@ conversations:
 - - Explain the synbtax to split a string in python?
   - Str.split(separator,max_split)
 
+<<<<<<< HEAD
 - -  How can you identify the data type of any variable in python?
+=======
+- - How can you identify the data type of any variable in python?
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
   - Use type(var)
 
 - - What does MAP function in python do?
@@ -926,7 +1013,11 @@ conversations:
 - - How Lists is differentiated from Tuples?
   - List are slow, can be edited but Tuples are fast and cannot be edited.
 
+<<<<<<< HEAD
 - - Use of NUMPY package?
+=======
+- - what is numpy package?
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
   - It is fastest, and the package take care of the number calculations.
 
 - - Uses of python?
@@ -999,17 +1090,25 @@ conversations:
   - Yes of course, it does dynamic transactions during the run time of the program.
 
 - - args vs kwargs?
+<<<<<<< HEAD
   - Args  dont know how many arguments are used.
 
     Kwargs- dont know how many keywords are used.
+=======
+  - Args  dont know how many arguments are used. Kwargs- dont know how many keywords are used.
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 
 - - use of isupper keyword in python?
   - This will prompt the upper keyword of any character in a string literal.
 
 - - pickling vs unpickling?
+<<<<<<< HEAD
   - If the objects translated from string then it seems to be pickling
 
     If the String is dumped to objects then it seems to un picking
+=======
+  - If the objects translated from string then it seems to be pickling If the String is dumped to objects then it seems to un picking
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 
 - -  What is py checker in python?
   - It is tool to quantitatively detects the bugs in source code.
@@ -1140,7 +1239,11 @@ conversations:
 - - Can we use else with for loop in python?
   - Yes we can use. once all the for loop is successfully executed the else part is going to execute, If there are any error occurs or any break happened in the loop then the else is not going to execute Ex for I in list1 print(i) Else print(execution done) even we can use else with while also
 
+<<<<<<< HEAD
 - -  What is type() and id() will do?
+=======
+- - What is type() and id() will do?
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
   - The type() will give you the information about datatype and id() will provide you the memory location of the object
 
 - - What is decorators?
@@ -1522,6 +1625,7 @@ conversations:
   - O'm a not a comedy why don't you check out a joke?
 
 - - Tell me a joke
+<<<<<<< HEAD
   - 'two vultures boarded a plane, each carrying two dead raccoons. the  stewardess
     stops them and says "sorry sir, only one carrion per  passenger." '
 
@@ -1530,6 +1634,15 @@ conversations:
 
 - - Tell me a joke
   - 'nasa recently sent a number of holsteins into orbit for experimental purposes. they called it the herd shot round the world.
+=======
+  - 'two vultures boarded a plane, each carrying two dead raccoons. the  stewardess stops them and says "sorry sir, only one carrion per  passenger." '
+
+- - Tell me a joke
+  - what did the buddhist say to the hot dog vendor?  "make me one with everthing."
+
+- - Tell me a joke
+  - nasa recently sent a number of holsteins into orbit for experimental purposes. they called it the herd shot round the world.
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 
 - - How is your health?
   - I'm not feeling well

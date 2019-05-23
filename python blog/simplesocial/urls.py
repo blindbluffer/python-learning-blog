@@ -16,7 +16,11 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import url,include
 from django.urls import path
+<<<<<<< HEAD
 from . import views
+=======
+from simplesocial import views
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 
 """urlpatterns = [
     url(r'^admin/', admin.site.urls),

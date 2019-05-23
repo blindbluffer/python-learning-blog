@@ -30,10 +30,16 @@ chatbot.set_trainer(ListTrainer)
 
 #Already trained and it's supposed to be persistent
 #chatbot.train("chatterbot.corpus.english")
+<<<<<<< HEAD
 """for files in os.listdir('F:\chatterbot-corpus-master\chatterbot-corpus-master\chatterbot_corpus\data\english/'):
     data = open('F:\chatterbot-corpus-master\chatterbot-corpus-master\chatterbot_corpus\data\english/' + files ,'r',encoding='utf-8').readlines()
     chatbot.train(data)
 """
+=======
+for files in os.listdir(r'C:\Users\Bourne\Desktop\chat\python-learning-blog-master\chats/'):
+    data = open(r'C:\Users\Bourne\Desktop\chat\python-learning-blog-master\chats/' + files ,'r',encoding='utf-8').readlines()
+    chatbot.train(data)
+>>>>>>> 9f74951c1bcea5533304edaa156ab4bf5c0cd082
 @csrf_exempt
 def get_response(request):
 	response = {'status': None}
