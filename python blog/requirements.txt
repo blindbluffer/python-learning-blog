@@ -56,7 +56,7 @@ text-unidecode==1.2
 thinc==7.0.4
 tqdm==4.32.1
 traitlets==4.3.2
-urllib3==1.24.3
+urllib3==1.26.5
 wasabi==0.2.2
 wcwidth==0.1.7
 wincertstore==0.2
