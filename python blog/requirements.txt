@@ -30,7 +30,7 @@ numpy==1.16.3
 oauthlib==3.0.1
 parso==0.4.0
 pickleshare==0.7.5
-Pillow==5.4.1
+Pillow==9.3.0
 Pint==0.9
 plac==0.9.6
 preshed==2.0.1
